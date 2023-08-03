@@ -8,11 +8,12 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'primary-linear-gradient': 'linear-gradient(to right, #954EE2, #D745EF, #E4396A, #FF7F01)',
+      },
+      fontFamily: {
+        sans: ['var(--font-poppins)'],
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 }
