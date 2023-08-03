@@ -11,6 +11,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '18.x'
-      - run: cd client && yarn
-      - run: cd client && yarn type
-      - run: cd client && yarn lint
+      - run: yarn
+      - run: yarn type
+      - run: yarn lint
